@@ -3,7 +3,9 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div>
-        <h1>Kiyona Ono's portfolio site</h1>
+        <div className='top-image'>
+            <h1>Portfolio site</h1>
+        </div>
 
         <h2>About this site</h2>
         <p>ここはエンジニアKiyoのポートフォリオサイトです。少しでも私について興味を持っていただけたら嬉しいです。</p>

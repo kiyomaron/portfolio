@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
         <div className="logo">
-            <h3>Portfolio</h3>
+            <h3>Kiyona Ono</h3>
         </div>
 
         <nav>
@@ -15,6 +15,9 @@ const Header = () => {
                 </li>
                 <li>
                     <Link to="profile">Profile</Link>
+                </li>
+                <li>
+                    <Link to="works">Works</Link>
                 </li>
                 <li>
                     <Link to="skills">Skills</Link>
