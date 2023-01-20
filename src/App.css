@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&display=swap');
+
 .App {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-size: 18px;
+  background: #fef4f4;
+  font-family: 'Josefin Slab', 'Shippori Mincho', serif;
 }
 
 /* Common */
@@ -9,7 +14,7 @@
   padding-bottom: 100px;
 }
 
-.section-title h2 {
+h2.section-title {
 	font-size: 40px;
 	position: relative;
 	padding-bottom: 20px;
@@ -17,21 +22,30 @@
 	font-weight: 600;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 /* header */
 header {
 display: flex;
 justify-content: space-around;
 align-items: center;
-background-color: #ee827c;
+background-color: #fff;
 /* position: fixed; */
 width: 100%;
 z-index: 10;
 height: 90px;
+border-bottom: #c099a0 1px solid;
 }
 
 header .logo h3 {
   font-size: 40px;
-  color: #fff;
+  font-weight: 600;
+  color: #c099a0;;
 }
 nav ul {
   margin: 0;
@@ -44,41 +58,71 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #c099a0;
+  font-weight: 600;
   transition: all 0.2s;
 }
 
 nav ul li a:hover {
-  color: #e8d3d1;
+  color: #f5b1aa;
 }
 
 
 /* footer */
 footer {
-  background-color: #ee827c;
+  background-color: #fff;
+  color: #c099a0;
   height: 80px;
   text-align: center;
 }
 
 footer p {
   line-height: 80px;
-  color: #fff;
+  color: #c099a0;
 }
 
 /* HomePage */
 .top-image {
-  height: 400px;
-  background-color: rgb(224, 224, 224);
+  height: 70vh;
+  background-image: url(../public/topImage.jpg);
+  background-size: cover;
+  background-color: #c099a0;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.top-image::after {
+  content: '';
+  background-color: rgba(192,153,160,.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.top-image h1 {
+  font-weight: 700;
+  color: #fff;
+  padding-top: 100px;
+  font-size: 60px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.top-image p {
+  color: #fff;
+  padding-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
+
 /* ProfilePage */
-.pt-100 {
-  padding-top: 100px;
-}
-.pb-100 {
-  padding-bottom: 100px;
-}
+
 ul.timeline-list {
   position: relative;
   margin: 0;
@@ -89,7 +133,7 @@ ul.timeline-list:before {
   content: "";
   width: 2px;
   height: 100%;
-  background: #ee827c;
+  background: #c099a0;
   left: 50%;
   top: 0;
   -webkit-transform: translateX(-50%);
@@ -102,7 +146,7 @@ ul.timeline-list li {
   width: 100%;
 }
 .timeline-content {
-  border: 2px solid #ee827c;
+  border: 2px solid #c099a0;
 	background-color: #fff;
 }
 ul.timeline-list li .timeline-content {
@@ -120,13 +164,18 @@ ul.timeline-list li:nth-child(2n) .timeline-content {
   font-size: 22px;
   font-weight: 600;
   margin: 10px 0;
+  text-decoration: underline; /* 下線 */
+  text-decoration-thickness: 0.5em; /* 線の太さ */
+  text-decoration-color: rgba(245, 177, 170, 0.4); /* 線の色 */
+  text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+  text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
 }
 ul.timeline-list li:before {
   position: absolute;
   content: "";
 	width: 25px;
 	height: 25px;
-	background-color: #ee827c;
+	background-color: #c099a0;
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -136,8 +185,7 @@ ul.timeline-list li:before {
 .timeline-content span {
   font-size: 18px;
 	font-weight: 600;
-	font-family: poppins;
-	color: #ee827c;
+	color: #c099a0;
 }
 
 

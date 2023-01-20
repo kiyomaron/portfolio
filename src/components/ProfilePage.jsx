@@ -4,11 +4,9 @@ const ProfilePage = () => {
   return (
     <section className='pt-100 pb-100'>
         <div className='container timeline'>
-            <div className='section-title'>
-                <h2 className='text-center'>Kiyona's Life</h2>
-            </div>
+            <h2 className='text-center section-title'>About My Life</h2>
             
-            <div className='row'>
+            <div className='row pb-100'>
                 <div>
                     <ul className='timeline-list'>
                         <li>
@@ -119,6 +117,14 @@ const ProfilePage = () => {
                     </ul>
                 </div>
             </div>
+                <h2 className='text-center section-title'>My favorites</h2>
+                <ul>
+                    <li>音楽（吹奏楽、映画音楽、JAZZ、平井大、Mrs.Green Apple）</li>
+                    <li>アウトドア（キャンプ、バーベキュー、シュノーケル、ダイビング）</li>
+                    <li>ワンピース（好きなキャラはジンベエ）</li>
+                    <li>短足な動物（ダックス、マンチカン）</li>
+                    <li>旅行</li>
+                </ul>
         </div>
     </section>
     

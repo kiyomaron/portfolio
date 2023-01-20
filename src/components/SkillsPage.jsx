@@ -2,7 +2,12 @@ import React from 'react';
 
 const SkillsPage = () => {
   return (
-    <div>SkillsPage</div>
+    <section className='pt-100'>
+        <div>
+            <h2 className='text-center section-title'>Skills</h2>
+        </div>
+    </section>
+    
   );
 };
 

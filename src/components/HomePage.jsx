@@ -2,17 +2,40 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div>
+    <section className='pb-100'>
         <div className='top-image'>
-            <h1>Portfolio site</h1>
+            <div className='top-container'>
+                <h1>Kiyona Ono's Portfolio Site</h1>
+                <p>座右の銘入れる？</p>
+            </div>
+            
         </div>
-
-        <h2>About this site</h2>
-        <p>ここはエンジニアKiyoのポートフォリオサイトです。少しでも私について興味を持っていただけたら嬉しいです。</p>
-
-        <h2>About me</h2>
-        <p>大学では社会学専攻でしたが、新卒でエンジニアになりました。研修期間の後は社内のVR推進チームに所属し、VR動画制作とVR研修の受講を半々でおこなっていました。2022年1月からは現在の某自動車メーカーにて工場IoT機器の可視化システム構築を担当しています。</p>
-    </div>
+        <div className='container'>
+            <div className='pt-100'>
+                <h2 className='text-center section-title'>About this site</h2>
+                <p>ここはエンジニアKiyona Onoのポートフォリオサイトです。少しでも私について興味を持っていただけたら嬉しいです。</p> 
+            </div>
+            <div className='pt-100'>
+                <h2 className='text-center section-title'>About me</h2>
+                <p>大学では社会学専攻でしたが、新卒でエンジニアになりました。360°動画制作やIoT機器可視化システムのカスタマイズ開発をおこなってきました。現在はReact×Laravelでバケットリストを作成するアプリを自己開発中です。</p>
+                <p>Follow me</p>
+                
+            </div>
+            <div className='pt-100'>
+                <h2 className='text-center section-title'>Works</h2>
+                <p>今までに作成したものの紹介です。</p>
+                <p>View more</p>
+                
+            </div>
+            <div className='pt-100'>
+                <h2 className='text-center section-title'>Skills</h2>
+                <p>私のスキルをまとめました。</p>
+                <p>View more</p>
+                
+            </div>
+        </div>
+        
+    </section>
   );
 };
 
