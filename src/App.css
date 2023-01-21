@@ -34,12 +34,15 @@ header {
 display: flex;
 justify-content: space-around;
 align-items: center;
-background-color: #fff;
-/* position: fixed; */
+background-color: rgba(255, 255, 255, .9);
+position: fixed;
 width: 100%;
 z-index: 10;
 height: 90px;
 border-bottom: #c099a0 1px solid;
+}
+.header-space {
+  height: 90px;
 }
 
 header .logo h3 {
@@ -120,6 +123,14 @@ footer p {
   z-index: 1;
 }
 
+.section-inner {
+  display: flex;
+}
+.profile-image {
+  width: 20%;
+  margin-right: 50px;
+  border-radius: 50%;
+}
 
 /* ProfilePage */
 
@@ -189,6 +200,8 @@ ul.timeline-list li:before {
 }
 
 
-
-
+/* WorksPage */
+.work-image {
+  width: 300px;
+}
 

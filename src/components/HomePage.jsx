@@ -17,8 +17,13 @@ const HomePage = () => {
             </div>
             <div className='pt-100'>
                 <h2 className='text-center section-title'>About me</h2>
-                <p>大学では社会学専攻でしたが、新卒でエンジニアになりました。360°動画制作やIoT機器可視化システムのカスタマイズ開発をおこなってきました。現在はReact×Laravelでバケットリストを作成するアプリを自己開発中です。</p>
-                <p>Follow me</p>
+                <div className='section-inner'>
+                    <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
+                    <div>
+                        <p>大学では社会学専攻でしたが、新卒でエンジニアになりました。360°動画制作やIoT機器可視化システムのカスタマイズ開発をおこなってきました。社会人歴はまもなく丸3年になります。現在はReact×Laravelでバケットリストを作成するアプリを自己開発中です。</p>
+                        <p>Github</p>
+                    </div>
+                </div>
                 
             </div>
             <div className='pt-100'>
