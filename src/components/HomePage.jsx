@@ -33,7 +33,7 @@ const HomePage = () => {
                 <p>今までに作成したものの紹介です。</p>
                 <div className='works-list'>
                     <div className='work-container'>
-                        <img className='work-image' src={`${process.env.PUBLIC_URL}/images/portfolio-img.png`} alt="" />
+                        <img className='work-image' src={`${process.env.PUBLIC_URL}/images/bucket-list-img.png`} alt="" />
                         <h3>バケットリスト</h3>
                         <p>死ぬまでにしたいことを登録して振り返ることができるWebアプリを作成中です。</p>
                         <p>HTML/CSS/React/Bootstrap5/ Laravel/Docker</p>
