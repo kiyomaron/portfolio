@@ -1,22 +1,44 @@
 import React from 'react';
-import { FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaGithub } from "react-icons/fa";
+import Tilt from 'react-vanilla-tilt';
 
 const HomePage = () => {
+
   return (
     <section className='pb-100'>
         <div className='top-image'>
             <div className='top-container'>
-                <h1>Kiyona Ono</h1>
-                <p>Frontend Engineer</p>
+                <Tilt id='card' options={{scale: 2, glare: 1 }}>
+                    <div className='content'>
+                        <h2>Welcome to Kiyona Ono's Portfolio site</h2>
+                    </div>
+                    <div className='first-view-content'>
+                        <div className='content-inner'>
+                            <div className='name-info'>
+                                <h1>Frontend Engineer</h1>
+                                <h2>大野 紀代菜</h2>
+                                <p>Kiyona Ono</p>
+                            </div>
+                            <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
+                        </div>
+                        <div className='contact-info'>
+                            <div className='sns-icon'><FaEnvelope /></div>
+                            <p>kyn.maron947@gmail.com</p>
+                        </div>
+                        <div className='contact-info with-link'>
+                            <a href="https://github.com/kiyomaron" className='sns-icon' target='_blank'><FaGithub /></a>
+                            <p>https://github.com/kiyomaron</p>
+                        </div>
+                    </div>
+                </Tilt>
             </div>
-            
         </div>
         <div className='container'>
             <div className='pt-100'>
                 <h2 className='text-center section-title'>About this site</h2>
                 <p>ここはエンジニアKiyona Onoのポートフォリオサイトです。少しでも私について興味を持っていただけたら嬉しいです。</p> 
             </div>
-            <div className='pt-100'>
+            {/* <div className='pt-100'>
                 <h2 className='text-center section-title'>About me</h2>
                 <div className='section-inner'>
                     <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
@@ -27,7 +49,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 
-            </div>
+            </div> */}
             <div className='pt-100'>
                 <h2 className='text-center section-title'>Works</h2>
                 <p>今までに作成したものの紹介です。</p>
@@ -48,7 +70,7 @@ const HomePage = () => {
                         <img className='work-image' src={`${process.env.PUBLIC_URL}/images/portfolio-img.png`} alt="" />
                         <h3>ポートフォリオサイト</h3>
                         <p>自分自身のこちらのポートフォリオサイトです。</p>
-                        <p>HTML/CSS/React/Bootstrap5</p>
+                        <p>HTML/CSS/React/Bootstrap5/JavaScript</p>
                     </div>
                 </div>
                 <p>View more</p>
