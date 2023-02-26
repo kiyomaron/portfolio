@@ -125,27 +125,18 @@ footer p {
   background-color: rgba(255,255,255,.1);
   backdrop-filter: blur(5px);
 }
-.top-container .first-view-content {
-  padding: 30px;
-  transition: 0.5s;
-  position: relative;
-}
-.top-container:hover .first-view-content {
-  transform: translateY(-30px);
-  opacity: 0;
-}
 
 .top-container .content {
   padding: 30px;
-  transform: translateY(30px);
+  /* transform: translateY(30px);
   opacity: 0;
-  transition: 0.5s;
-  position: absolute;
+  transition: 0.5s; */
+  position: relative;
 }
-.top-container:hover .content {
+/* .top-container:hover .content {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 .top-container h1 {
   color: #fff;
   font-size: 1.5rem;
@@ -291,6 +282,7 @@ ul.timeline-list li:before {
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .1);
   margin-bottom: 20px;
 }
+
 .works-list {
   display: flex;
   justify-content: space-around;

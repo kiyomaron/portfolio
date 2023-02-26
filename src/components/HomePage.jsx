@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaGithub } from "react-icons/fa";
 import Tilt from 'react-vanilla-tilt';
+import Work from './Work';
 
 const HomePage = () => {
 
@@ -8,11 +9,8 @@ const HomePage = () => {
     <section className='pb-100'>
         <div className='top-image'>
             <div className='top-container'>
-                <Tilt id='card' options={{scale: 2, glare: 1 }}>
+                <Tilt id='card' options={{scale: 2, glare: 1, max: 35 }}>
                     <div className='content'>
-                        <h2>Welcome to Kiyona Ono's Portfolio site</h2>
-                    </div>
-                    <div className='first-view-content'>
                         <div className='content-inner'>
                             <div className='name-info'>
                                 <h1>Frontend Engineer</h1>
@@ -30,6 +28,7 @@ const HomePage = () => {
                             <p>https://github.com/kiyomaron</p>
                         </div>
                     </div>
+                    
                 </Tilt>
             </div>
         </div>
@@ -54,13 +53,26 @@ const HomePage = () => {
                 <h2 className='text-center section-title'>Works</h2>
                 <p>今までに作成したものの紹介です。</p>
                 <div className='works-list'>
-                    <div className='work-container'>
-                        <img className='work-image' src={`${process.env.PUBLIC_URL}/images/bucket-list-img.png`} alt="" />
-                        <h3>バケットリスト</h3>
-                        <p>死ぬまでにしたいことを登録して振り返ることができるWebアプリを作成中です。</p>
-                        <p>HTML/CSS/React/Bootstrap5/ Laravel/Docker</p>
-                    </div>
-                    <div className='work-container'>
+                    <Work 
+                        workImageSource={`${process.env.PUBLIC_URL}/images/bucket-list-img.png`}
+                        workTitle="バケットリスト" 
+                        description="死ぬまでにしたいことを登録して振り返ることができるWebアプリを作成中です。" 
+                        skills="HTML/CSS/React/Bootstrap5/ Laravel/Docker"
+                    />
+                    <Work 
+                        workImageSource={`${process.env.PUBLIC_URL}/images/portfolio-img.png`}
+                        workTitle="専修大学吹奏楽研究会公式WEBサイト" 
+                        description="死ぬまでにしたいことを登録して振り返ることができるWebアプリを作成中です。" 
+                        skills="HTML/CSS/React/Bootstrap5/ Laravel/Docker"
+                    />
+                    <Work 
+                        workImageSource={`${process.env.PUBLIC_URL}/images/portfolio-img.png`}
+                        workTitle="ポートフォリオサイト" 
+                        description="死ぬまでにしたいことを登録して振り返ることができるWebアプリを作成中です。" 
+                        skills="HTML/CSS/React/Bootstrap5/ Laravel/Docker"
+                    />
+                    
+                    {/* <div className='work-container'>
                         <img className='work-image' src={`${process.env.PUBLIC_URL}/images/portfolio-img.png`} alt="" />
                         <h3>専修大学吹奏楽研究会公式WEBサイト</h3>
                         <p>学生時代に所属していたサークルのWEBサイトを、OGとして作成しました。（現在はコロナ禍の影響で無料サービスに移行しています。）</p>
@@ -71,7 +83,7 @@ const HomePage = () => {
                         <h3>ポートフォリオサイト</h3>
                         <p>自分自身のこちらのポートフォリオサイトです。</p>
                         <p>HTML/CSS/React/Bootstrap5/JavaScript</p>
-                    </div>
+                    </div> */}
                 </div>
                 <p>View more</p>
                 
