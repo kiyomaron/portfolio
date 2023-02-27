@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ProfilePage.css";
 
 const ProfilePage = () => {
   return (
@@ -117,15 +118,41 @@ const ProfilePage = () => {
                     </ul>
                 </div>
             </div>
+            <div className='pb-100'>
                 <h2 className='text-center section-title'>My favorites</h2>
-                <ul>
-                    <li>音楽（吹奏楽、映画音楽、JAZZ、平井大、Mrs.Green Apple）</li>
-                    <li>アウトドア（キャンプ、バーベキュー、シュノーケル、ダイビング）</li>
-                    <li>ワンピース（好きなキャラはジンベエ）</li>
-                    <li>短足な動物（ダックス、マンチカン）</li>
-                    <li>旅行</li>
-                    <li>ハリーポッター</li>
-                </ul>
+                <dl className='hobbies'>
+                    <div className='hobby'>
+                        <dt>音楽</dt>
+                        <dd>吹奏楽/映画音楽/JAZZ/平井大/Mrs.Green Apple</dd>
+                    </div>
+                    
+                    <div className='hobby'>
+                        <dt>アウトドア</dt>
+                        <dd>キャンプ/バーベキュー/シュノーケル/ダイビング</dd>
+                    </div>
+                    
+                    <div className='hobby'>
+                        <dt>アニメ</dt>
+                        <dd>ワンピース（好きなキャラはジンベエ）</dd>
+                    </div>
+
+                    <div className='hobby'>
+                        <dt>動物</dt>
+                        <dd>特に短足なダックス/マンチカン</dd>
+                    </div>
+                    
+                    <div className='hobby'>
+                        <dt>旅行</dt>
+                        <dd>海外旅行も国内旅行も好きです</dd>
+                    </div>
+                    
+                    <div className='hobby'>
+                        <dt>ハリーポッター</dt>
+                        <dd>ユニバも映画も小説も舞台も全部好きです</dd>
+                    </div>
+                </dl>
+            </div>
+               
             
             <div>
                 <h2 className='text-center section-title'>Why Engineer?</h2>
