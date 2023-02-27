@@ -5,7 +5,7 @@ import Tilt from 'react-vanilla-tilt';
 const HomePage = () => {
 
   return (
-    <section className='pb-100'>
+    <section>
         <div className='top-image'>
             <div className='top-container'>
                 <Tilt id='card' options={{scale: 2, glare: 1, max: 35 }}>
@@ -31,7 +31,7 @@ const HomePage = () => {
                 </Tilt>
             </div>
         </div>
-        <div className='container'>
+        {/* <div className='container'> */}
             {/* <div className='pt-100'>
                 <h2 className='text-center section-title'>About this site</h2>
                 <p>ここはエンジニアKiyona Onoのポートフォリオサイトです。少しでも私について興味を持っていただけたら嬉しいです。</p> 
@@ -83,7 +83,7 @@ const HomePage = () => {
                 <h2 className='text-center section-title'>Contact</h2>
                 <p>ご連絡はこちらへお願いいたします。</p>
             </div> */}
-        </div>
+        {/* </div> */}
         
     </section>
   );
