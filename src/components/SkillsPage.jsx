@@ -8,33 +8,33 @@ const SkillsPage = () => {
         <h2 className='text-center section-title'>Skills</h2>
         <dl className='skills'>
           <div className='skill'>
-              <dt>デザイン・コーディング</dt>
-              <dd>Illustrator/Photoshop</dd>
+              <dt>コーディング</dt>
+              <dd>HTML/CSS/</dd>
           </div>
           
           <div className='skill'>
               <dt>フロントエンド</dt>
-              <dd>キャンプ/バーベキュー/<br></br>シュノーケル/ダイビング</dd>
+              <dd>React</dd>
           </div>
           
           <div className='skill'>
               <dt>バックエンド</dt>
-              <dd>ワンピース（好きなキャラはジンベエ）</dd>
+              <dd>node.js/PHP(Laravel)</dd>
           </div>
 
           <div className='skill'>
               <dt>データベース</dt>
-              <dd>特に短足なダックス/マンチカン</dd>
+              <dd>MSSQL/MongoDB</dd>
           </div>
           
           <div className='skill'>
               <dt>インフラ・サーバー</dt>
-              <dd>海外旅行も国内旅行も好きです</dd>
+              <dd>Docker/Tomcat</dd>
           </div>
           
           <div className='skill'>
-              <dt>その他</dt>
-              <dd>ユニバも映画も小説も舞台も全部好きです</dd>
+              <dt>デザイン・動画編集</dt>
+              <dd>Illustrator/Photoshop/<br></br>PremirePro/AfterEffects</dd>
           </div>
         </dl>
       </section>

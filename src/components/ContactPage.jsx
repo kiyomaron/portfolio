@@ -2,7 +2,10 @@ import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <div>
+      <p>お問い合わせはTwitterまたはLinkedInからお願いいたします。</p>
+      
+    </div>
   );
 };
 
