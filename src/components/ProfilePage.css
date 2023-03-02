@@ -1,3 +1,71 @@
+/* ProfilePage */
+
+ul.timeline-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  ul.timeline-list:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #c099a0;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+  }
+  ul.timeline-list li {
+    position: relative;
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+  .timeline-content {
+    border: 2px solid #c099a0;
+      background-color: #fff;
+  }
+  ul.timeline-list li .timeline-content {
+    width: 45%;
+      color: #333;
+      padding: 30px;
+      float: left;
+      text-align: right;
+  }
+  ul.timeline-list li:nth-child(2n) .timeline-content {
+    float: right;
+      text-align: left;
+  }
+  .timeline-content h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5em; /* 線の太さ */
+    text-decoration-color: rgba(245, 177, 170, 0.4); /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+  }
+  ul.timeline-list li:before {
+    position: absolute;
+    content: "";
+      width: 25px;
+      height: 25px;
+      background-color: #c099a0;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      border-radius: 50%;
+  }
+  .timeline-content span {
+    font-size: 18px;
+      font-weight: 600;
+      color: #c099a0;
+  }
+
+
 .hobbies {
     display: flex;
     justify-content: space-around;
@@ -21,4 +89,22 @@
 .hobby dt {
     margin-bottom: 20px;
     width: 100%;
+}
+
+.reasons {
+    text-align: center;
+}
+.reasons h3{
+    /* font-size: 22px;
+    font-weight: 600; */
+    margin: 10px 0;
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5em; /* 線の太さ */
+    text-decoration-color: rgba(245, 177, 170, 0.4); /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+
+.reasons p {
+    padding-bottom: 50px;
 }
