@@ -1,0 +1,7 @@
+.modal-popup-container {
+    width: 60vw;
+    height: 40vh;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #66666680;
+}
