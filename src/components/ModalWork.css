@@ -1,7 +1,20 @@
 .modal-popup-container {
-    width: 60vw;
-    height: 40vh;
+    width: 80vw;
+    height: 60vh;
     position: absolute;
     background-color: #fff;
     border: 1px solid #66666680;
+}
+.modal-popup-container img{
+    width: 100%;
+}
+
+.modal-popup-container .work-container {
+    display: flex;
+}
+.modal-inner-container {
+    position: relative;
+}
+.modal-inner-container button {
+    position: absolute;
 }

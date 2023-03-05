@@ -29,6 +29,7 @@ const Work = (props) => {
       {modalOpen && 
         <ModalWork 
           handleCloseClick={() => setModalOpen(false)} 
+          workImageSource={`${process.env.PUBLIC_URL}/images/bucket-list-img.png`}
           workTitle={props.workTitle} 
           description={props.description}
           skills={props.skills}
