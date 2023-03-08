@@ -16,7 +16,11 @@ const HomePage = () => {
                                 <h2>大野 紀代菜</h2>
                                 <p>Kiyona Ono</p>
                             </div>
-                            <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
+                            <div className='image-box'>
+                                <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
+                                <p className='hover-text'>favorite: music, travel, design and coding etc.</p>
+                            </div>
+                            
                         </div>
                         <div className='contact-info'>
                             <div className='sns-icon'><FaEnvelope /></div>
