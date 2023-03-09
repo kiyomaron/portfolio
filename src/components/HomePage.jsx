@@ -18,7 +18,7 @@ const HomePage = () => {
                             </div>
                             <div className='image-box'>
                                 <img src={`${process.env.PUBLIC_URL}/myPicture.png`} alt="プロフィール写真" className='profile-image' />
-                                <p className='hover-text'>favorite: music, travel, design and coding etc.</p>
+                                
                             </div>
                             
                         </div>
@@ -31,8 +31,14 @@ const HomePage = () => {
                             <p>https://github.com/kiyomaron</p>
                         </div>
                     </div>
+                    <div className='hover-text'>
+                        <h3>My Favorite Things: </h3>
+                        <p>music, travel, design and coding etc.</p>
+                    </div>
+                    
                     
                 </Tilt>
+                
             </div>
         </div>
         {/* <div className='container'> */}
