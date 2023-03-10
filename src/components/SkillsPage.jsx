@@ -1,5 +1,6 @@
 import React from 'react';
 import "./SkillsPage.css";
+import { FaDatabase } from "react-icons/fa";
 
 const SkillsPage = () => {
   return (
@@ -24,6 +25,7 @@ const SkillsPage = () => {
 
           <div className='skill'>
               <dt>データベース</dt>
+              <FaDatabase className='icon'/>
               <dd>MSSQL/MongoDB</dd>
           </div>
           

@@ -17,10 +17,15 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
 }
 .skill dt {
     margin-bottom: 20px;
     width: 100%;
+}
+.skill .icon {
+    position: absolute;
+    font-size: 3rem;
 }
 
 .skill dd {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaGithub } from "react-icons/fa";
 import Tilt from 'react-vanilla-tilt';
+import HoverTextBox from './HoverTextBox';
 
 const HomePage = () => {
 
@@ -31,10 +32,7 @@ const HomePage = () => {
                             <p>https://github.com/kiyomaron</p>
                         </div>
                     </div>
-                    <div className='hover-text'>
-                        <h3>My Favorite Things: </h3>
-                        <p>music, travel, design and coding etc.</p>
-                    </div>
+                    {<HoverTextBox className='hover-text' />}
                     
                     
                 </Tilt>
