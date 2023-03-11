@@ -6,28 +6,41 @@
     text-align: center;
 }
 .skill {
-    width: 300px;
+    width: 500px;
     height: 300px;
     background-color: rgba(255,255,255,0.7);
-    border-radius: 50%;
-    padding: 20px;
+    border-radius: 5%;
+    padding: 40px;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    position: relative;
 }
-.skill dt {
-    margin-bottom: 20px;
+.skill-detail {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+}
+.skill h3 {
+    width: 100%;
+}
+.skill-detail dt {
+    padding-right: 10px;
+    width: 20%;
+    text-align: right;
 }
 .skill .icon {
     position: absolute;
-    font-size: 3rem;
+    font-size: 7rem;
+    color: rgba(190, 161, 161, 0.2)
+}
+.skill-detail dd {
+    width: 30%;
+}
+.skill-detail p {
+    text-align: left;
+    width: 50%;
 }
 
-.skill dd {
-    display: block;
-}
