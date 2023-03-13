@@ -1,0 +1,26 @@
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container p {
+    margin-bottom: 0;
+}
+.contact-container .sns-icon {
+    padding-right: 10px;
+    color: #000;
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+}
+.sns-icon .git-hub {
+    padding-right: 10px;
+    height: 40px;
+    width: 30px;
+}

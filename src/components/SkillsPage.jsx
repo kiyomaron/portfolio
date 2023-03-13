@@ -49,7 +49,7 @@ const SkillsPage = () => {
               <dt>MSSQL</dt>
               <dd>1年</dd>
               <dt>MongoDB</dt>
-              <dd>6ヶ月</dd>
+              <dd>3ヶ月</dd>
             </div>
           </div>
           
